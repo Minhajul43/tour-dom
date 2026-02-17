@@ -7,14 +7,41 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <head>
+  <header>
     <h1>Welcome to Tour of Dom</h1>
     <ul>
+      <h1>My frient list:</h1>
       <li>Minhajul </li>
       <li>Juel</li>
       <li>Tahmeed</li>
+      <li>Islam</li>
     </ul>
-  </head>
+  </header>
+
+  <script>
+    const students ={
+      name: "Minhajul Islam",
+      age:24,
+      profession: "University Student"
+    }
+    // console.log(students.name);
+
+
+    const liCollection =document.getElementsByTagName("li");
+    // console.log(liCollection);
+    for(const li of liCollection){
+      // console.log(li.innerText);
+    }
+
+//  all h1 tags
+const h1Collection =document.getElementsByTagName("h1");
+// console.log(h1Collection);
+
+for(const h1 of h1Collection){
+  console.log(h1.innerText);
+}
+    
+  </script>
   <script src="js/hello.js"></script>
 </body>
 </html>

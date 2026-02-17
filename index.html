@@ -7,16 +7,30 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Tour of Dom</h1>
-    <ul>
-      <h1>My frient list:</h1>
-      <li>Minhajul </li>
-      <li>Juel</li>
-      <li>Tahmeed</li>
-      <li>Islam</li>
+  <section>
+    <header>
+      <h1>Welcome to Tour of Dom</h1>
+      <ul>
+        <h1>My frient list:</h1>
+        <li>Minhajul </li>
+        <li>Juel</li>
+        <li>Tahmeed</li>
+        <li>Islam</li>
+      </ul>
+    </header>
+  </section>
+
+  <section>
+    <h1 class="food-item">Foods I love</h1>
+    <ul class="food-list">
+      <li>Rich</li>
+      <li>Porata</li>
+      <li>Apple</li>
+      <li>Pinaple</li>
+      <li>Banana</li>
+      <li>Mango</li>
     </ul>
-  </header>
+  </section>
 
   <script>
     const students ={
@@ -38,7 +52,19 @@ const h1Collection =document.getElementsByTagName("h1");
 // console.log(h1Collection);
 
 for(const h1 of h1Collection){
-  console.log(h1.innerText);
+  // console.log(h1.innerText);
+}
+
+// get element by id
+const foodItem = document.getElementsByClassName("food-list");
+// console.log(foodItem);
+for(const food of foodItem){
+  // console.log(food.innerText);
+}
+
+const foodItems =document.getElementsByClassName("food-list");
+for(const food of foodItems){
+  console.log(food.innerText);
 }
     
   </script>

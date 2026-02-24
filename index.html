@@ -8,8 +8,12 @@
 </head>
 <body>
   <section>
-    <header>
+    <header id = "header">
       <h1>Welcome to Tour of Dom</h1>
+
+      <p>
+        This is a simple website to learn about <span>Dom manipulation</span>. We will learn how <span>to select elements</span>, how to change the content of elements, how to add and remove elements, and how to handle events.
+      </p>
       <ul>
         <h1>My frient list:</h1>
         <li>Minhajul </li>
@@ -65,6 +69,13 @@ for(const food of foodItem){
 const foodItems =document.getElementsByClassName("food-list");
 for(const food of foodItems){
   console.log(food.innerText);
+}
+
+// query selector all
+const spanElements = document.querySelectorAll("#header p span");
+for(const span of spanElements){
+  console.log(span.innerText);
+
 }
     
   </script>

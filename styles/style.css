@@ -7,4 +7,11 @@ li{
 #food-item{
   color: green;
 }
+.section-card{
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background:lightgray;;
+}
 

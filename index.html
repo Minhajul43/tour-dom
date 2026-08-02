@@ -9,7 +9,7 @@
 <body>
   <section>
     <header id = "header">
-      <h1>Welcome to Tour of Dom</h1>
+      <h1>Welcome to tour of Dom</h1>
 
       <p>
         This is a simple website to learn about <span>Dom manipulation</span>. We will learn how <span>to select elements</span>, how to change the content of elements, how to add and remove elements, and how to handle events.
@@ -79,7 +79,7 @@ for(const food of foodItem){
 
 const foodItems =document.getElementsByClassName("food-list");
 for(const food of foodItems){
-  console.log(food.innerText);
+  // console.log(food.innerText);
 }
 
 // query selector all
@@ -89,7 +89,13 @@ for(const span of spanElements){
 }
 
 const spanElements2 =document.querySelector("#header p span");
-console.log(spanElements2.innerText);
+// console.log(spanElements2.innerText);
+
+const foodList = document.getElementsByClassName("food-item");
+// console.log(foodList[0].innerText);
+for(const food of foodList){
+  // console.log(food.innerText);
+}
     
   </script>
   <script src="js/hello.js"></script>
